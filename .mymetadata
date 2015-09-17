@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="geass"
+  id="myeclipse.1441441063406"
+  context-root="/geass"
+  j2ee-spec="5.0"
+  archive="geass.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

@@ -1,0 +1,95 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>生日礼物！！要点右边的链接!</title>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<link rel="shortcut icon" href="http://lovejiani.duapp.com/favicon.ico">
+	<style type="text/css">
+		@font-face {
+			font-family: digit;
+			src: url('digital-7_mono.ttf') format("truetype");
+		}
+	</style>
+	<link href="css/default.css" type="text/css" rel="stylesheet">
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/garden.js"></script>
+    <script type="text/javascript" src="js/functions.js"></script>
+	<EMBED src="bgm/bgm.mp3" autostart="true" loop="true" controls=smallconsole hidden=true> 
+</head>
+
+<body>
+	<div id="mainDiv">
+		<div id="content">
+			<div id="code">
+				 <span class="comments">/**</span><br />
+                <span class="space"/><span class="comments">*Dear......</span><br />
+                <span class="space"/><span class="comments">*Dear Xiao hei ,</span><br />
+                <span class="space"/><span class="comments">* Today is your ...... 14th birthay~~</span><br />
+                <span class="space"/><span class="comments">* 23333333333</span><br />
+                                <span class="space"/><span class="comments">* Anyway Happy 20th birthday (づ￣3￣)づ╭❤～</span><br />
+                                               <span class="space"/><span class="comments">* 感谢20年前的今天你出生了～</span><br />
+                            
+                                <span class="space"/><span class="comments">* As a 程序yuan, 这是我做的一个网站for you </span><br />
+                <span class="space"/><span class="comments">*/</span><br />
+                Boy i = <span class="keyword">new</span> Boy(<span class="string">"闫麟阁"</span>);<br />
+                Girl u = <span class="keyword">new</span> Girl(<span class="string">"矫慧"</span>);<br />
+                <span class="comments">// 我知道你看不懂这个变量定义. </span><br />
+                <span class="comments">// but..., I make sure you can figure out this one......by baidu the "for循环"~</span><br />
+				u.happybirthday();<br />
+				for(int j = 18 ;j <= ∞ ;j ++){<br />
+				&nbsp&nbsp&nbsp	i.love(u);<br />
+				}<br />
+				<font face=微软雅黑 size=4px color=#ff7575><b>“无论你我在哪，故事永远不会结束”</b></font>
+			</div>
+			<div id="loveHeart">
+				<canvas id="garden"></canvas>
+				<div id="words">
+					<div id="messages">
+						Jiaohui, We have been together
+						<div id="elapseClock"></div>
+					</div>
+					<div id="loveu">
+						Love u forever and ever.<br/>
+						<div class="signature">- ur Yan<br/></div>
+						    <a href='homepage.html' id="accept">click me </a>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+	<script type="text/javascript">
+		var offsetX = $("#loveHeart").width() / 2;
+		var offsetY = $("#loveHeart").height() / 2 - 55;
+		var together = new Date();
+		together.setFullYear(2014,4,3);
+		together.setHours(15);
+		together.setMinutes(46);
+		together.setSeconds(0);
+		together.setMilliseconds(0);
+		
+		if (!document.createElement('canvas').getContext) {
+			var msg = document.createElement("div");
+			msg.id = "errorMsg";
+			msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+"; 
+			document.body.appendChild(msg);
+			$("#code").css("display", "none")
+			$("#copyright").css("position", "absolute");
+			$("#copyright").css("bottom", "10px");
+		    document.execCommand("stop");
+		} else {
+			setTimeout(function () {
+				startHeartAnimation();
+			}, 5000);
+
+			timeElapse(together);
+			setInterval(function () {
+				timeElapse(together);
+			}, 500);
+
+			adjustCodePosition();
+			$("#code").typewriter();
+		}
+	</script>
+</body>
+</html>
